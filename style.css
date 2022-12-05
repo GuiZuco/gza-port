@@ -8,11 +8,10 @@ body {
 header {
     background-color: #2e2e2e;
     justify-content: center;
-    font-weight: 600;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 20;
+    z-index: 100;
 }
 
 nav {
@@ -104,7 +103,7 @@ a {
 }
 
 .home-botao {
-    margin-top: 1.2em;
+    margin-top: 2.5em;
     display: flex;
     justify-content: center;
     align-items: center;

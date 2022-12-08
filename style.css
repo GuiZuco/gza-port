@@ -1,59 +1,11 @@
 body {
     background-color: #2e2e2e;
-    color: white;
+    color: #FEFEFE;
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
 }
 
-header {
-    background-color: #2e2e2e;
-    justify-content: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
 
-nav {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 12vh;
-}
-
-nav p a {
-    color: #FF5733;
-}
-
-.logo {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    transition: 0.5s;
-}
-
-.logo:hover {
-    color: #FF5733;
-    transition: 0.5s;
-}
-
-span {
-    color: #FF5733;
-}
-
-nav ul {
-    display: flex;
-    justify-content: end;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
 
 /*=============== PRINCIPAL =============*/
 
@@ -74,11 +26,17 @@ a {
     background-color: #2e2e2e;
 }
 
-.conteudo .principal {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+@media screen and (max-width: 768px){
+    .conteudo .principal {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photo{
+        width: 100px;
+    }
 }
 
 .principal {
@@ -94,7 +52,7 @@ a {
 
 .photo {
     order: -1;
-    width: min(350px, 75vw);
+    width: 90%;
     margin: 0 0 2rem;
 }
 
@@ -109,7 +67,6 @@ a {
     align-items: center;
     gap: 1em;
     font-size: 0.9em;
-    
 }
 
 .link-botao {
@@ -126,4 +83,46 @@ a {
 .link-botao:hover{
     transform: scale(1.1);
     transition: 0.3s;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .principal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 100vh;
+        width: 90%;
+        margin: auto;
+    }
+
+    .principal p{
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+
+    .principal h1{
+        font-size: 2.5em;
+    }
+
+    .home-botao {
+        margin-top: 2.5em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .link-botao {
+    width: 120px;
+    height: 40px;
+    }
+
+
+    .photo{
+        order: 1;
+        width: 400px;
+        margin: 0;
+    }
 }

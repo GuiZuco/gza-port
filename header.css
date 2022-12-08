@@ -1,24 +1,27 @@
-header{
+header {
     background-color: #2e2e2e;
     justify-content: center;
-    font-weight: 600;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 20;
+    z-index: 100;
 }
 
-nav{
+nav {
     width: 85%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 12vh;
+    transition: 0.5s;
 }
 
-.logo{
-    color: #FFFFFF;
+nav p a {
+    color: #FF5733;
+}
+
+.logo {
+    color: #FEFEFE;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -26,11 +29,67 @@ nav{
     transition: 0.5s;
 }
 
-.logo:hover{
+.logo:hover {
     color: #FF5733;
     transition: 0.5s;
 }
 
-span{
+span {
     color: #FF5733;
+}
+
+a {
+    text-decoration: none;
+    color: #FEFEFE;
+}
+
+.menu-nav {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-hamburguer {
+        display: none;
+    }
+
+
+    header {
+        background-color: #2e2e2e;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 12vh;
+    }
+
+
+    .menu-nav {
+        display: flex;
+        text-align: center;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .menu-nav li{
+        margin-right: 1em;
+        transition: 0.5s;
+    }
+
+    .menu-nav a:hover{
+        color: #FF5733;
+        transition: 0.5s;
+    }
+
+    .link-menu {
+        padding: 1em;
+    }
+
 }
